@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: NPM Audit Comment
-        uses: wx-jayesh/actions-npm-audit-comment@v1
+        uses: InkWOX/npm-audit-notify@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
