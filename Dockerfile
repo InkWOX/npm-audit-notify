@@ -8,5 +8,6 @@ RUN cd /opt/action-files/dist && \
     npm i -only=prod
 
 COPY entrypoint.sh /opt/action-files/entrypoint.sh
+RUN chmod +x /opt/action-files/entrypoint.sh
 
 ENTRYPOINT [ "/opt/action-files/entrypoint.sh" ]
